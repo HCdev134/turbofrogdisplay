@@ -8,9 +8,8 @@ html, body{
 
 }
 .grid-wrapper{
-    display: grid; 
-    grid-template-columns: 1fr 2fr; 
-    grid-gap: 1em ; 
+   display: flex; 
+   flex: 0 1 100vh; 
 }
 .unsplash-creds{
     background-color: rgba(100, 10, 110, 0.51); 
@@ -35,4 +34,8 @@ li{
 }
 li:last-child{
     border-bottom: none; 
+}
+.grid-wrapper:nth-child(odd){
+    background-color: gray; 
+    border: 2px inset orange; 
 }
