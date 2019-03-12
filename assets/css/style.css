@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+body{
+    
+    font-family: 'Roboto', 'sans-serif';
+    height: auto; 
+    background: #eee; 
+}
+
+h1.greeter{
+    font-family: 'Lato', 'Roboto'; 
+    font-weight: 400; 
+    font-size: 2.5rem; 
+    text-transform: uppercase; 
+}
+/* Using inheritance for other Hn styles */
+h2{
+    font-weight: 400; 
+    font-size: 1.2rem; 
+    text-transform: capitalize; 
+    margin: 0 ; 
+}
+img{
+    display: block; 
+    width: 100%; 
+    
+}
+.logo-img{
+    width: 100%; 
+    margin: auto 0; 
+}
+main{
+    max-width: 900px; 
+    margin: auto; 
+    box-shadow: 32px 0px 40px rgba(0,0,0,0.35), -30px 0px 40px rgba(0,0,0,0.2)
+}
+#landing{
+    background-color: #eee; 
+}
+#landing-text{
+    display: flex; 
+
+    /* one half of landing viewport w/ 40vh */
+
+    flex: 0 1 40vw; 
+    height: 50vh; 
+    /* align to center */
+    justify-content: center;
+    align-items: center ; 
+    text-align: center; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+}
+#landing-text h2{
+    color: #333 ; 
+}
+#landing-image{
+    background: url("../img/diana-parkhouse-1155348-unsplash.jpg"); 
+
+    /* other half of landing viewport with 50vh leaving 10vh as extra space  */
+    height: 50vh; 
+    background-position: center ; 
+    background-size: cover ; 
+    background-repeat: no-repeat; 
+
+    /* default for flex-grow(using shorthand) is 0 1 40vw on landing text 60vw on landing image  */
+
+    flex: 0 1 60vw; 
+    margin: 0; 
+    
+}
+.btn-ref{
+    padding: 0.5rem 2rem; 
+    border: 1px solid rgb(190, 146, 146) ; 
+    display: inline-block; 
+    margin: 2rem 0 0; 
+    border-radius: 20px ;
+    text-decoration: none ; 
+    color: rgb(2, 1, 1) ; 
+    transition: background-color 0.5s ease-in; 
+}
+.btn-ref:hover{
+    background-color: #0538ee; 
+    color: rgb(0, 0, 1); 
+    font-weight: bolder ; 
+}
+
+/* .pg-header{
+    width: 100%; 
+    overflow-x: hidden ; 
+  
+
+} */
+
+.topnav{
+    font-family: 'Roboto', 'Lato', 'sans-serif'; 
+    margin-bottom: 0.5rem ; 
+    background-color: rgb(68, 90, 177); 
+    border-radius: 25px; 
+    overflow: hidden; 
+    
+}
+.topnav a#logo{
+    max-height: 90px; 
+    border-right: 1px solid black; 
+    color: white ; 
+    float: left ; 
+    border-radius: 0px; 
+    padding: 10px; 
+    
+}
+.topnav a{
+    float: right ; 
+    padding: 15px 17px; 
+    text-align: center ; 
+    text-decoration: none; 
+    text-align: center ; 
+    text-shadow: 0px 3px 10px rgba(3,7,35,0.52);
+    text-transform: capitalize; 
+    color: #000; 
+    font-weight: bolder ; 
+    border-radius: 20px ; 
+    transition: background-color 0.5s ease-in; 
+   
+
+}
+
+.topnav a:hover{
+    background-color: rgba(231, 247, 10, 0.52); 
+    font-weight: bolder ; 
+}
+#header{
+    padding: 1.5rem ; 
+    text-align: center; 
+    background-color: #333 ; 
+    color: #fff; 
+}
+#header > h2{
+    display: inline-block; 
+    border-left: 2px inset #fff ; 
+    border-right: 2px inset #fff; 
+    padding-right: 1rem; 
+    padding-left: 1rem; 
+
+}
+.img-caption{
+    padding: 1rem; 
+    text-align: center; 
+}
+#pg-footer{
+     text-align: center ;
+     padding: 2rem 1rem; 
+     margin: auto; 
+     color: #000; 
+
+}
+#pg-footer{
+    font-size: 20px ; 
+    margin-bottom: 0; 
+}
+
+/* Media Queries sizes 500px and greater */
+
+/* using something i've refferred to as the "showcase method" for 100vh designs for mobile (similar to my profile rough draft @ trilogy */
+@media(min-width: 500px){
+    #landing{
+        display: flex; 
+        height: 100%; 
+
+    }
+    #landing-text{
+        height: 100vh; 
+    }
+    #landing-image{
+        height: 100vh; 
+    }
+}
+
+/* For Tablets and larger phones 700px and up */
+@media(min-width: 700px){
+    .btn-ref{
+        padding: 1rem 3rem; 
+    }
+}
