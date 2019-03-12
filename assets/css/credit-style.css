@@ -1,0 +1,38 @@
+html, body{
+    padding: 0; 
+    margin: 0; 
+    background: linear-gradient(to bottom right #333, #fff); 
+    font-family: 'Courier New', 'Courier', 'monospace';
+    letter-spacing: 2px; 
+    font-size: 1rem; 
+
+}
+.grid-wrapper{
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    grid-gap: 1em ; 
+}
+.unsplash-creds{
+    background-color: rgba(100, 10, 110, 0.51); 
+    box-sizing: border-box; 
+    width: 100%; 
+    height: 40vh; 
+    padding: 1.5rem 2rem; 
+    color: #000; 
+
+
+}
+ol{
+    font-size: 1.5rem; 
+    background-color: rgba(109, 19, 10, 0.51); 
+    list-style-type: none;
+    margin: 5px; 
+    padding: 10px 10px 10px 1px ; 
+    
+}
+li{
+    border-bottom: 1px solid black; 
+}
+li:last-child{
+    border-bottom: none; 
+}

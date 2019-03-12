@@ -5,19 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/credit-style.css">
 </head>
 <body>
-    <img src="" alt="">
-    <figure>
-        Very Awesome Photographers !
-    </figure>
-Photo: Maruo X 
-<figcaption>
-       Photo Credit:  mauro-tandoi ID:1428317 -unsplash
-</figcaption>
-diana-parkhouse-1155348-unsplash.jpg
-<figcaption>
-    Diana Parkhouse : Credit (Unsplash::Photography)
-</figcaption>
+    <h1 class="announcement">Very Clean and Minimal Markdown Documents For Photo Credit Upon Request: </h1>
+<div id="page-wrapper" class="grid-wrapper">
+           <!-- Widget from unsplash for creds -->
+           <div class="unsplash-creds">|
+               Photo Crediting: Unsplash.com user: 
+            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@maurotandoi?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Mauro Tandoi"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Mauro Tandoi</span></a>
+                
+           </div>
+         <div class="cred-description">
+
+                Very Awesome Photographers !
+                
+                2nd Best Photo: Maruo X 
+                <p id="best-one" onclick=" handleBestClick()">click me for best photo!</p>
+
+         </div>
+         <!-- Grid space v -->
+                  <div class="space-one"></div>
+          <div class="other-mentions">
+                Other Mentions :
+            
+                <img src="assets/img/diana-parkhouse-1155348-unsplash.jpg" alt="" width="400px" height="400px">
+          </div>
+              
+        <div class="captions">
+                <figcaption>
+                Photo Credit:  mauro-tandoi 
+                </figcaption>
+                Photo Credit: Diana Parkhouse -unsplash.jpg
+                <figcaption>
+                Ian Espinoza : Credit (Unsplash::Photography)
+                </figcaption>
+        </div>
+        <div class="creds not-the-kind-Jgoodman-steals :) ">    
+    <ol class="photo-creds">
+            <li>#1 Site: Unsplash (free stock images from photographers)</li>
+            <li>#2 Our own sourced photography (phone cameras are pretty high quality now) </li>
+            <li>#3 Unsplash Mauro Tandoi: Mesas of Some Kind</li>
+            <li>#4 Early Spring Hail, Anon Photographer</li>
+            <li>#5 Orchard : Anon Photographer</li>
+            <li>#6 Mountain Range : Anon Photographer</li>
+            <li>#7 Person Walking By Waterfall : Ian Espinoza</li>
+        </ol>
+
+        </div>
+
+</div>
+<script>
+var bestPhoto = document.getElementById("best-one"); 
+
+function handleBestClick(){
+    bestPhoto.innerText = "Best Photo is By Anon Photographer : ) "
+}
+
+</script>
+  
 </body>
 </html>
