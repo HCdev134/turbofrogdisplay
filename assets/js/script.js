@@ -18,4 +18,12 @@ console.log(imgFx);
 // select child elements using chaining and attributes 
 
 var parentOfImg = $("#images"); 
+console.dir(parentOfImg);
+
+var randomObj = {
+    name: {
+        firstName: "User first name",
+        lastName: "User last name"
+    }
+}
 

@@ -1,15 +1,23 @@
 html, body{
     padding: 0; 
-    margin: 0; 
-    background: linear-gradient(to bottom right #333, #fff); 
+    width: 80%; 
+    margin: 5rem auto;  
+    background-color: #eee; 
     font-family: 'Courier New', 'Courier', 'monospace';
     letter-spacing: 2px; 
     font-size: 1rem; 
+    
+   
+   
 
 }
-.grid-wrapper{
-   display: flex; 
-   flex: 0 1 100vh; 
+body{
+    border-right: 4px groove black; 
+    box-shadow: 20px 25px 65px 19px rgba(182, 74, 224, 0.5), -30px 15px 65px 3px rgba(182, 74, 225, 0.5);
+    
+}
+.announcement{
+   margin: 10px 0px 10px 10px; 
 }
 .unsplash-creds{
     background-color: rgba(100, 10, 110, 0.51); 
@@ -20,6 +28,10 @@ html, body{
     color: #000; 
 
 
+}
+.creds > img{
+    max-width: 100%; 
+    border-radius: 20px; 
 }
 ol{
     font-size: 1.5rem; 
@@ -38,4 +50,28 @@ li:last-child{
 .grid-wrapper:nth-child(odd){
     background-color: gray; 
     border: 2px inset orange; 
+}
+/* rough styling for phones and smaller devices media query (600px) , approx sizes, (678, 594, 578, 483) */
+
+
+@media(max-width: 600px){
+    body,html{
+        margin: 10px auto; 
+    }
+    body{
+        width: 89%; 
+        font-weight: bolder; 
+          
+        overflow-x: hidden; 
+        border-right: 2px solid aqua; 
+       
+    }
+    .creds{
+        margin: 14px; 
+    }
+    img{
+        overflow-x: hidden; 
+        max-width: 99%; 
+        max-height: 100%; 
+    }
 }
