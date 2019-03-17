@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Yellowtail');
+html,body{
+    background-color:#000; 
+}
 body{
     
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Roboto Slab', serif;
     height: auto; 
-    background: #eee; 
+    background-color: #fff; 
 }
 
 h1.greeter{
@@ -15,8 +17,11 @@ h1.greeter{
 }
 /* Using inheritance for other Hn styles */
 h2{
+    font-family: 'Yellowtail', cursive;
     font-weight: 400; 
-    font-size: 1.2rem; 
+    font-size: 1.4rem;
+    letter-spacing: 4px;  
+    line-height: 2.1;
     text-transform: capitalize; 
     margin: 0 ; 
 }
@@ -118,6 +123,7 @@ main{
     text-shadow: 0px 3px 10px rgba(3,7,35,0.52);
     text-transform: capitalize; 
     color: #000; 
+    font-size: 1.1rem; 
     font-weight: bolder ; 
     border-radius: 20px ; 
     transition: background-color 0.5s ease-in; 
@@ -144,13 +150,15 @@ main{
 
 }
 .img-caption{
+    
     padding: 1rem; 
     text-align: center; 
 }
 #pg-footer{
      text-align: center ;
-     padding: 2rem 1rem; 
+     padding: 2rem 2rem; 
      margin: auto; 
+     background-color: rgba(213, 213, 235, 0.54);
      color: #000; 
 
 }
@@ -159,6 +167,34 @@ main{
     margin-bottom: 0; 
 }
 
+/* descendant selector chain for footer  */
+
+#pg-footer > .bar > p > a{
+    max-width: 900px; 
+    margin: auto; 
+    display: block; 
+    padding: 10px; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    background-color: #0538ee;
+    color:#000; 
+    font-weight: bold; 
+    transition: 0.7s ease-in-out; 
+    border-bottom: 1px solid #333; 
+}
+#pg-footer > .bar > p > a:last-child{
+    border-bottom: none; 
+}
+#pg-footer > .bar > p > a:hover{
+
+    background-color: #333 ; 
+    color: #000 ; 
+    
+}
+#pg-footer > .bar > p > .coming-soon-msg{
+    border: 1px solid red; 
+    margin-top: 20px; 
+}
 /* Media Queries sizes 500px and greater */
 
 /* using something i've refferred to as the "showcase method" for 100vh designs for mobile (similar to my profile rough draft @ trilogy */
