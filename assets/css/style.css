@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Yellowtail');
-html,body{
-    background-color:#000; 
-}
+
 body{
     
     font-family: 'Roboto Slab', serif;
     height: auto; 
-    background-color: #fff; 
+
+    background-color: #FFF; 
+    color: #000;
 }
 
 h1.greeter{
-    font-family: 'Lato', 'Roboto'; 
+    font-family: 'Roboto Slab', serif;
     font-weight: 400; 
     font-size: 2.5rem; 
     text-transform: uppercase; 
+    color: #000
 }
 /* Using inheritance for other Hn styles */
+
 h2{
     font-family: 'Yellowtail', cursive;
     font-weight: 400; 
@@ -34,17 +36,48 @@ img{
     width: 100%; 
     margin: auto 0; 
 }
+#navbar{
+    overflow: hidden; 
+    background-color: #000; 
+}
+#navbar a{
+    float: right; 
+    padding: 12px 15px; 
+    text-decoration: none; 
+    color: rgb(14, 135, 206); 
+}
 main{
-    max-width: 900px; 
+
+    /* main container, many styles removed for flat UI */
+
+
+    max-width: 800px; 
     margin: auto; 
-    box-shadow: 32px 0px 40px rgba(0,0,0,0.35), -30px 0px 40px rgba(0,0,0,0.2)
+    /* REMOVED STYLE 
+    borders removed for flat UI  */
+/* 
+    border-left:  2px rgba(68, 90, 177, 1)  double ; 
+    border-right: 2px rgba(0, 0, 100, 1) double;  */
+
+    /* REMOVED STYLE  */
+
+
+/* removed padding on main element , and other things making it ugly.  */
+    /* padding-left: 10px; 
+    padding-right: 0; 
+    padding-bottom: 0px;  */
+     
+    /* KP: box-shadows, how to make them look pretty:  , 2: box-shadows: material design
+     box-shadow: 10px 0px 17px rgba(255, 255, 255, 0.692), -10px 0px 20px rgba(255, 255, 255, 0.649); */
+
+     /* REMOVED STYLE */
 }
 #landing{
     background-color: #eee; 
 }
 #landing-text{
     display: flex; 
-
+    /* using "showcase" method */
     /* one half of landing viewport w/ 40vh */
 
     flex: 0 1 40vw; 
@@ -62,7 +95,7 @@ main{
 #landing-image{
     background: url("../img/diana-parkhouse-1155348-unsplash.jpg"); 
 
-    /* other half of landing viewport with 50vh leaving 10vh as extra space  */
+    /* other half of landing viewport with 50vh adding up to 100vh and extra space on sides */
     height: 50vh; 
     background-position: center ; 
     background-size: cover ; 
@@ -90,17 +123,13 @@ main{
     font-weight: bolder ; 
 }
 
-/* .pg-header{
-    width: 100%; 
-    overflow-x: hidden ; 
-  
 
-} */
 
 .topnav{
     font-family: 'Roboto', 'Lato', 'sans-serif'; 
     margin-bottom: 0.5rem ; 
-    background-color: rgb(68, 90, 177); 
+    background-color: rgba(0, 7, 10, 1); 
+ 
     border-radius: 25px; 
     overflow: hidden; 
     
@@ -119,22 +148,12 @@ main{
     padding: 15px 17px; 
     text-align: center ; 
     text-decoration: none; 
-    text-align: center ; 
-    text-shadow: 0px 3px 10px rgba(3,7,35,0.52);
-    text-transform: capitalize; 
-    color: #000; 
-    font-size: 1.1rem; 
-    font-weight: bolder ; 
-    border-radius: 20px ; 
-    transition: background-color 0.5s ease-in; 
+    color: rgb(12, 175, 245);
    
 
 }
 
-.topnav a:hover{
-    background-color: rgba(231, 247, 10, 0.52); 
-    font-weight: bolder ; 
-}
+
 #header{
     padding: 1.5rem ; 
     text-align: center; 
@@ -150,9 +169,12 @@ main{
 
 }
 .img-caption{
-    
+    background-color: #444; 
     padding: 1rem; 
     text-align: center; 
+}
+.img-caption:hover{
+    background-color: rgba(95, 219, 219, 0.616);
 }
 #pg-footer{
      text-align: center ;
@@ -167,33 +189,17 @@ main{
     margin-bottom: 0; 
 }
 
-/* descendant selector chain for footer  */
 
-#pg-footer > .bar > p > a{
-    max-width: 900px; 
-    margin: auto; 
+.coming-soon-msg{
     display: block; 
-    padding: 10px; 
-    text-decoration: none; 
-    text-transform: uppercase; 
-    background-color: #0538ee;
-    color:#000; 
-    font-weight: bold; 
-    transition: 0.7s ease-in-out; 
-    border-bottom: 1px solid #333; 
+    line-height: 2.1;
+    max-width: 900px; 
+    width: 80%; 
+    margin: auto; 
 }
-#pg-footer > .bar > p > a:last-child{
-    border-bottom: none; 
-}
-#pg-footer > .bar > p > a:hover{
-
-    background-color: #333 ; 
-    color: #000 ; 
-    
-}
-#pg-footer > .bar > p > .coming-soon-msg{
-    border: 1px solid red; 
-    margin-top: 20px; 
+.coming-soon-msg:hover{
+    background-color: rgba(95, 219, 219, 0.616);
+    border: 1px groove rgb(17, 94, 158);
 }
 /* Media Queries sizes 500px and greater */
 

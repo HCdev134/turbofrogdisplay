@@ -5,3 +5,22 @@ HSL:
 midnightbluehsl(226,62,26)
 RGB: 
 rgb(25,44,110)
+
+Older Scheme ^ , Title: "FortNite Palette(not exact cc)
+
+New Scheme, Accidentally made the exact same color as chan theme 
+
+background-image: linear-gradient
+
+(to right bottom, 
+#eeeeee, -Starts at #eee white/light light grey 
+#d5d5e2,
+ #babdd6, 
+ #9ca6cb, 
+
+    -To a Lighter Blue nearly opaque
+#7a91c0);
+
+Want to make the color a little different because i don't want the EXACT chan style color, if its not EXACT its pretty darn close 
+
+`https://mycolor.space/gradient?ori=to+right+bottom&hex=%23EEEEEE&hex2=%237A91C0&sub=40`

@@ -1,0 +1,12 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Responsive RWD pages test AND re factoring test, designing pages with new techniques and more negative space",
+  "main": "audio-and.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["website", "adsense practice", "negative space design"],
+  "author": "",
+  "license": "ISC"
+}
