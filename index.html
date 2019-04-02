@@ -4,41 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website Theme Category "icy" By HC </title>
+    <title>Website Theme Category "icy"  </title>
 
     <link rel="stylesheet" href="reset.css">
 
-    <!-- MY STYLESHEET :  -->
-    <link rel="stylesheet" href="assets/css/style.css">
 
+
+
+
+    
     <!-- Google fonts (other is imported in CSS ) -->
     <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+
+        <!-- MY STYLESHEET :  -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+
 </head>
 <body>
-
+        <div class="mainnav" id="navbar">
+                <a href="index.html" class="active">Home Page</a>
+                <a href="audio-test.html">Podcast Audio/Blog test page</a>
+                <a href="credit.html">Credits</a>
+                <a href="javascript:void(0)">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+                    <i class="fas fa-compass"></i>
+                </a>
+</div>      
     <main>
         <!-- Landing page area,  divs are Staggered so look for nested tags -->
-        <div id="landing">
-            <div id="landing-text">
+        <div id="landing" class="main-landing">
+            <div id="landing-text" class="landing-text">
 
                 <div id="landing-text-inner">
                   
 
 
-                    <h1 class="greeter">Fam Photography</h1>
+                        <i class="fas fa-compass"></i>
+                        <h1 class="greeter"> Photography</h1>
+
                     <h2>Nature & Other Photography</h2>
                     <a href="index.html#header" id="view-work" class="btn-ref">
                     View Images 
                     </a>
                     <a href="index.html#pg-footer" id="view-work" class="btn-ref">
-                    Links & Photo Credits 
+                    Links & Photo Credits &#x1F4F0 
+                    </a>
+                    <a href="index.html#pg-footer" id="view-work" class="btn-ref">
+                    3rd button test
                     </a>
                 </div>
 
             </div>
-            <div id="landing-image">
+            <div id="landing-image" class="landing-image">
                 <!-- Image is displaying in CSS, using "showcase" method for RWD -->
             </div>
+
         </div>
 
 
@@ -46,11 +67,11 @@
         <div id="images">
 
             <div id="header">
-                <h2>Our Photography: </h2>
+                <h2>Photography: </h2>
             </div>
             <!-- more of a static design so harder to target with jQuery -->
             <!-- Images Go here -->
-            <img src="assets/img/fam-photog-landscape-orchard.jpg" alt="image cannot display" width="555px">
+            <img class="landing-image" src="assets/img/mauro-tandoi-1428317-unsplash.jpg" alt="image cannot display" width="555px">
             <div class="img-caption">
                 <h3>Photo 1:</h3>
                 <p class="photo-description">
@@ -58,15 +79,16 @@
                 </p>
             </div>
 
-            <img src="assets/img/Shot_creds_ourown_0919_2.png" alt="image cannot display" width="555px">
+            <img src="assets/img/ian-espinosa-972830-good-for-colorfortblue-unsplash.jpg" alt="image cannot display" width="555px">
             <div class="img-caption">
                 <h3>Photo 2: </h3>
+                
                 <p class="photo-description">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 </p>
             </div>
 
-            <img src="assets/img/landscape-for-bg.jpg" alt="image cannot display" width="555px">
+            <img src="assets/img/icon-logo-photog-opnsour.jpg" alt="image cannot display" width="555px">
             <div class="img-caption">
                 <h3>Photo 3:</h3>
                 <p class="pic-description">
@@ -74,7 +96,7 @@
                 </p>
             </div>
 
-            <img src="assets/img/cred_ourown_0919_3.jpg" alt="image cannot display" width="555px">
+            <img src="assets/img/diana-parkhouse-1155348-unsplash.jpg" alt="image cannot display" width="555px">
             <div class="img-caption">
                 <h3>Photo 4: </h3>
                 <p class="pic-description">
@@ -96,7 +118,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, iste.
                 </p>
             </div>
-            <img src="assets/img/cred_ourown_0919_4.jpg" alt="image cannot display"  width="555px">
+            <img src="assets/img/diana-parkhouse-1155348-unsplash.jpg" alt="image cannot display"  width="555px">
             <div class="img-caption">
                 <h3>Photo 7:</h3>
                 <p class="pic-description">
@@ -107,40 +129,27 @@
         </div>
     </main>
     <footer id="pg-footer">
-     <div class="bar">
-            <h3>Contact: 
-                <span> &#x1F607</span>
-                <span><a href="javascript:void(0)">Github(coming soon)</a></span>
-            </h3>
-            <p>request email address: <span>  (usually burner email will be created to contact you on first notice) <a href="javascript:void(0)" title="form (coming soon)" >Mail Contact Form</a></span> </p>
-            <p><strong<a href="javascript:void(0)" title="form (coming soon)" >Github:</a> </strong></p>
-            <p>Remote Contact:
-                <a href="javascript:void(0)" title="form (coming soon)" >Slack</a>
-                <a href="javascript:void(0)" title="form (coming soon)" >Discord</a> 
-                <a href="javascript:void(0)" title="form (coming soon)" >Github</a>
-                <a href="javascript:void(0)" title="form (coming soon)" >Mail Form(most efficient)</a>
 
-            <span class="coming-soon-msg">coming soon &uarr; &#x1F92B &#x2614	</span>
-            </p>
-           
-     </div>
-        
+
+        footer content &copy;
     </footer>
+  
+    <div id="two-navbar" class="topnav">
+            <a href="javascript:void(0)" class="link link-logo"></a> 
+            <a class="link" href="index.html">Home</a>
+            
+            <a class="link" href="audio-test.html">Podcast Audio Page</a>
 
-    <div id="navbar" class="topnav">
-            <a href="#" id="logo"> 
-               <img class="logo-img" src="assets/img/icon-logo-photog-opnsour.jpg" alt="image" height="50px" width="30px" >
-                
-            
-            
-            </a>
-            <a class="link" href="#">Home</a>
-            <a class="link" href="#">Extra Photos</a>
             <a class="link" href="credit.html">Credits</a>
-            <a class="link" href="#">Contact</a>
-            <a class="link" href="javascript:void(0)">Under Construction</a>
+
+            <a class="link" title="contact page coming soon" href="javascript:void(0)">Contact</a>
+           
+
+
     </div>
-          
+
+    
+
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
